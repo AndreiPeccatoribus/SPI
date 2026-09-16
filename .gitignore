@@ -1,0 +1,11 @@
+#
+*.log
+temp/
+*.bak
+*.qsf
+*.rpt
+tb_spi.sv
+/simulation
+/output_files
+/incremental_db
+/db
