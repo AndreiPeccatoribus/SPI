@@ -3,6 +3,7 @@
 temp/
 *.bak
 *.qsf
+*.qpf
 *.rpt
 tb_spi.sv
 /simulation
