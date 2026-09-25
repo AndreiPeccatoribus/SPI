@@ -32,4 +32,4 @@ At first I made a very simple but unrelieble schem but later manged to get close
 “For academic use only”.
 
 ## Author
-Your name, date, contact.
+Andrei Vladimirovich Bodeev, 25.09.2026, krjekovichav@gmail.com.
