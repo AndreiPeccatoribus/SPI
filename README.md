@@ -5,7 +5,7 @@ This project implements an SPI master/slave interface based on a looped shift re
 At first I made a very simple but unreliable scheme, but later managed to get closer to OpenTitan features.
 
 ## Features
-- 16-bit shift register (parameter `B`, default 16; enough to represent float numbers with sufficient precise)
+- 16-bit shift register (parameter `B`, default 16; 16 bits is sufficient to represent fixed-point numbers with adequate precision for this application.)
 - Master and slave modes
 - Multiple slave select lines implemented via numeric `slave_id` (not individual CS wires)
 - Built-in synchronizers (2‑FF) for clock domain crossing
