@@ -5,7 +5,7 @@ This project implements an SPI master/slave interface based on a looped shift re
 At first I made a very simple but unreliable scheme, but later managed to get closer to OpenTitan features.
 
 ## Features
-- 16-bit shift register (parameter `B`, default 16; enough to represent float numbers precisely)
+- 16-bit shift register (parameter `B`, default 16; enough to represent float numbers with sufficient precise)
 - Master and slave modes
 - Multiple slave select lines implemented via numeric `slave_id` (not individual CS wires)
 - Built-in synchronizers (2‑FF) for clock domain crossing
@@ -26,6 +26,7 @@ The design consists of three main modules:
    - `ACTIVE` generates `sck_b` using `PRESCALLER`, shifts out `tx` on MOSI (falling edge), samples MISO into `rx` (rising edge).  
    - `TRAIL` waits `T_TRAIL` cycles, then outputs `rx` to `master_get` and returns to `IDLE`.  
    - Synchronizes `miso_inp` with two flip‑flops.
+<img width="1233" height="695" alt="image" src="https://github.com/user-attachments/assets/21c98709-1519-4deb-a0d4-74e073308130" />
 
 2. **Slave** – `slave.sv`  
    - Synchronizes `sck_b_inp`, `mosi_inp`, `cs_inp` with two flip‑flops each.  
@@ -167,6 +168,7 @@ Andrei Vladimirovich Bodeev, 25.09.2026, krjekovichav@gmail.com.
    - `ACTIVE` генерирует `sck_b` с помощью `PRESCALLER`, сдвигает `tx` на MOSI (по спаду), сэмплирует MISO в `rx` (по фронту).  
    - `TRAIL` ждёт `T_TRAIL` тактов, затем выдаёт `rx` на `master_get` и возвращается в `IDLE`.  
    - Синхронизирует `miso_inp` двумя триггерами.
+<img width="1233" height="695" alt="image" src="https://github.com/user-attachments/assets/21c98709-1519-4deb-a0d4-74e073308130" />
 
 2. **Слейв** – `slave.sv`  
    - Синхронизирует `sck_b_inp`, `mosi_inp`, `cs_inp` двумя триггерами каждый.  
