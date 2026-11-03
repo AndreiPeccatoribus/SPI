@@ -1,4 +1,22 @@
-# SPI Interface Implementation
+# <p align="center"> FP16 Softcore </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SystemVerilog-1A1A1A?style=for-the-badge&logo=systemverilog&logoColor=white" alt="SystemVerilog">
+  <img src="https://img.shields.io/badge/Altera-00549F?style=for-the-badge&logo=intel&logoColor=white" alt="Altera">
+  <img src="https://img.shields.io/github/stars/AndreiPeccatoribus/INT16?style=for-the-badge&logo=github&color=yellow" alt="Repo stars">
+  <img src="https://img.shields.io/github/license/AndreiPeccatoribus/INT16?style=for-the-badge&logo=open-source-initiative&logoColor=green" alt="License">
+</p>
+
+<p align="center">
+<img src="logo.gif" alt="FP16 Core Logo" width="600" />
+</p>
+
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/AndreiPeccatoribus/INT16?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndreiPeccatoribus/INT16?style=for-the-badge)
+
+# Chapter: SPI Interface Implementation
 
 ## Overview
 This project implements an SPI master/slave interface based on a looped shift register architecture. It supports full-duplex communication, multiple slave selection (with different quartz frequencies), and synchronization for reliable data exchange.  
